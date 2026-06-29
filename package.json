@@ -1,0 +1,96 @@
+{
+  "name": "react-pesel-input",
+  "version": "0.1.0",
+  "description": "Headless React PESEL input with validation, default styles, and Mantine/MUI bindings",
+  "keywords": [
+    "react",
+    "pesel",
+    "input",
+    "validation",
+    "poland"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./mantine": {
+      "types": "./dist/mantine.d.ts",
+      "import": "./dist/mantine.js",
+      "require": "./dist/mantine.cjs"
+    },
+    "./mui": {
+      "types": "./dist/mui.d.ts",
+      "import": "./dist/mui.js",
+      "require": "./dist/mui.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode lib",
+    "build:app": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "pesel-utils": "^1.0.4"
+  },
+  "peerDependencies": {
+    "@mantine/core": ">=7",
+    "@mui/material": ">=5",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@mantine/core": {
+      "optional": true
+    },
+    "@mui/material": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^5.2.1",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mantine/core": "^9.4.1",
+    "@mantine/hooks": "^9.4.1",
+    "@mui/material": "^9.1.2",
+    "@mui/system": "^9.1.2",
+    "@radix-ui/themes": "^3.3.0",
+    "@storybook/addon-a11y": "^10.4.6",
+    "@storybook/addon-docs": "^10.4.6",
+    "@storybook/addon-vitest": "^10.4.6",
+    "@storybook/react-vite": "^10.4.6",
+    "@tanstack/react-form": "^1.33.0",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "@vitest/browser-playwright": "^4.1.9",
+    "@vitest/coverage-v8": "^4.1.9",
+    "oxlint": "^1.69.0",
+    "playwright": "^1.61.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-hook-form": "^7.80.0",
+    "storybook": "^10.4.6",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.1.9"
+  }
+}
